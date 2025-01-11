@@ -1,7 +1,7 @@
 #include <Bonezegei_HCSR04.h>
 
-const int TRIGGER_PIN = 10;
-const int ECHO_PIN = 11;
+const int TRIGGER_PIN = 11;
+const int ECHO_PIN = 10;
 bool flag = false;
 int counter = 0;
 
@@ -21,11 +21,11 @@ void loop() {
     if(counter >= 5){
       Serial.println("Helmet detected!");
       Serial.println("Fan on");
-      digitalWrite(7, HIGH);
+      digitalWrite(5, HIGH);
       delay(600000); // 10-minutes
       // delay(5000);
       Serial.println("Fan off");
-      digitalWrite(7, LOW);
+      digitalWrite(5, LOW);
       flag = true;
       counter = 0;
     }
