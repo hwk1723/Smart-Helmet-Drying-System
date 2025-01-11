@@ -22,7 +22,7 @@ void loop() {
       Serial.println("Helmet detected!");
       Serial.println("Fan on");
       digitalWrite(7, HIGH);
-      delay(600000);
+      delay(600000); // 10-minutes
       // delay(5000);
       Serial.println("Fan off");
       digitalWrite(7, LOW);
